@@ -4,6 +4,7 @@ import { Routes } from './routes/Routes';
 require('dotenv').config();
 
 const app = express();
+app.use(express.json());
 
 app.get('/home', (req, res) => {
     res.send('Home Page');
